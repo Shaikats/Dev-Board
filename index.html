@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Board</title>
+
+    <!--Google font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--FontAwesome link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!--Daisy UI + Tailwind CSS (start)-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-color": "#3752FD",
+              "base-color": "#F4F7FF",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!--Tailwind CSS (end)-->
+
+    <!--Raw CSS-->
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+
+  <body class="font-poppins bg-base-color">
+    <!---------->
+    <!--Header-->
+    <!---------->
+    <header
+      class="navbar container shadow-md mx-auto p-4 md:rounded-xl md:relative md:top-4 mb-8 bg-white"
+    >
+      <!-------->
+      <!--left-->
+      <!-------->
+      <div class="navbar-start space-x-4">
+        <img class="w-[28px] md:w-[36px]" src="./assets/logo.png" alt="" />
+
+        <!--site logo-->
+        <a class="text-lg md:text-2xl flex">
+          Dev <span class="font-bold">Board</span>
+        </a>
+      </div>
+
+      <!--------->
+      <!--right-->
+      <!--------->
+      <div class="navbar-end space-x-4">
+        <div
+          class="bg-base-color flex items-center space-x-4 px-4 py-2 rounded-3xl"
+        >
+          <img
+            class="w-[20px] md:w-[28px]"
+            src="./assets/checkbox.png"
+            alt=""
+          />
+          <span
+            id="total-completed-task-count"
+            class="text-base md:text-2xl font-bold"
+            >23</span
+          >
+        </div>
+
+        <img
+          id="dyn-bg"
+          class="w-10 md:w-12 h-10 md:h-12 bg-base-color rounded-full p-2 zoom-effect"
+          src="./assets/theme-btn.png"
+          alt=""
+        />
+      </div>
+    </header>
+  </body>
+</html>
