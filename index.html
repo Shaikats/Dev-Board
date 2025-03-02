@@ -44,8 +44,6 @@
     </script>
     <!--Tailwind CSS (end)-->
 
-    <!--Raw CSS-->
-    <link rel="stylesheet" href="./styles/index.css" />
   </head>
 
   <body class="font-poppins bg-base-color">
@@ -53,11 +51,11 @@
 
     <!--Header-->
     <header
-      class="navbar container shadow-md mx-auto p-4 md:rounded-xl md:relative md:top-4 mb-8 bg-white"
+      class="max-w-[1400px] mx-auto px-4 navbar container shadow-md p-4 md:rounded-xl md:relative md:top-4 mb-8 bg-white"
     >
  
       <!--left-->
-      <div class="navbar-start space-x-4">
+      <div class="navbar-start space-x-4 ">
         <img class="w-[28px] md:w-[36px]" src="./assets/logo.png" alt="" />
 
         <!--site logo-->
@@ -96,7 +94,7 @@
       
     <!-- Main -->
 
-    <main class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-8 p-0">
+    <main class="max-w-[1430px] mx-auto px-4 container grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-8 p-0">
 
     
       <!-- main board -->
@@ -143,14 +141,18 @@
               </div>
           </div>
 
-          
+
           <!--divider-->
-          <hr class="w-full dashed">
+         
+          <div class="border-t-2 border-dashed border-[#E6E9FF] mt-10 mb-10"></div>
+
+
+
           </hr>
 
 
             <!--task list-->
-            <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class=" w-full grid grid-cols-1 md:grid-cols-3 gap-6">
 
               <!--task item (1)-->
               <div id="item-1" class="bg-base-color p-6 space-y-4 rounded-xl shadow-md md:shadow-none">
@@ -318,7 +320,8 @@
 
 
           <!--divider-->
-          <hr class="w-full dashed">
+          <hr class="mt-5 w-full dashed">
+
           </hr>
 
           <!--activity content-->

@@ -55,6 +55,8 @@ function truncateText(text, maxLength = 60) {
     return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
 }
 
+document.getElementById('discover').style.cursor = 'pointer';
+
 document.getElementById('discover').addEventListener('click', function () {
     window.location.href = './blogs.html';
 });
@@ -63,13 +65,13 @@ document.getElementById('discover').addEventListener('click', function () {
 //-----------------------------//
 // Dynamic Background
 //-----------------------------//
-let backgroundList = ['#d9ead3', '#fce5cd', '#CCC', '#c9bbc8', '#aac9ce', '#F4F7FF'];
-let i = 0;
+document.getElementById('dyn-bg').style.cursor = 'pointer';
 
 document.getElementById('dyn-bg').addEventListener('click', function () {
-    document.body.style.backgroundColor = backgroundList[i];
-    i = (i + 1) % backgroundList.length;
+    let randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16); // Generate a random hex color
+    document.body.style.backgroundColor = randomColor;
 });
+
 
 
 //-----------------------------//
