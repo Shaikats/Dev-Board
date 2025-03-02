@@ -49,15 +49,14 @@
   </head>
 
   <body class="font-poppins bg-base-color">
-    <!---------->
+
+
     <!--Header-->
-    <!---------->
     <header
       class="navbar container shadow-md mx-auto p-4 md:rounded-xl md:relative md:top-4 mb-8 bg-white"
     >
-      <!-------->
+ 
       <!--left-->
-      <!-------->
       <div class="navbar-start space-x-4">
         <img class="w-[28px] md:w-[36px]" src="./assets/logo.png" alt="" />
 
@@ -67,9 +66,8 @@
         </a>
       </div>
 
-      <!--------->
+
       <!--right-->
-      <!--------->
       <div class="navbar-end space-x-4">
         <div
           class="bg-base-color flex items-center space-x-4 px-4 py-2 rounded-3xl"
@@ -101,13 +99,12 @@
     <main class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-8 p-0">
 
     
-      <!-- (main board) -->
+      <!-- main board -->
      
       <section class="w-full md:col-span-3 shadow-md mx-auto p-4 rounded-xl bg-white flex flex-col">
 
         
           <!--heading-->
-         
           <div class="w-full grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-4">
 
               <!--task assigned-->
@@ -144,7 +141,179 @@
                       <span id="heading-date" class="text-1xl font-bold">28 Feb 2025</span>
                   </div>
               </div>
+          </div>
 
+          
+          <!--divider-->
+          <hr class="w-full dashed">
+          </hr>
+
+
+            <!--task list-->
+            <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
+
+              <!--task item (1)-->
+              <div id="item-1" class="bg-base-color p-6 space-y-4 rounded-xl shadow-md md:shadow-none">
+
+                  <!--upper part-->
+                  <span class="bg-white rounded-md px-3 py-2 text-sm">ShopEase</span>
+                  <h1 class="text-xl font-semibold">Fix Mobile Button Issue </h1>
+                  <p class="task-details bg-white rounded-md p-4 text-sm text-gray-500">
+                      The current home page is overflowing on the mobile touch button.
+                  </p>
+
+                  <!--divider-->
+                  <hr class="dashed">
+
+                  <!--lower part-->
+                  <div class="w-full flex justify-between">
+                      <div class="flex flex-col">
+                          <span class="text-sm text-gray-500">Deadline</span>
+                          <span class="font-semibold">21 March 2025</span>
+                      </div>
+
+                      <button id="c1" class="item-complete btn bg-primary-color text-white">Completed</button>
+                  </div>
+              </div>
+
+              <!--task item (2)-->
+              <div id="item-2" class="bg-base-color p-6 space-y-4 rounded-xl shadow-md md:shadow-none">
+
+                  <!--upper part-->
+                  <span class="bg-white rounded-md px-3 py-2 text-sm">CloudSync</span>
+                  <h1 class="text-xl font-semibold">Add Dark Mode </h1>
+                  <p class="task-details bg-white rounded-md p-4 text-sm text-gray-500">
+                      Current software doesn't have any dark mode switch feature. There needs a few hands on this.
+                  </p>
+
+                  <!--divider-->
+                  <hr class="dashed">
+
+                  <!--lower part-->
+                  <div class="w-full flex justify-between">
+                      <div class="flex flex-col">
+                          <span class="text-sm text-gray-500">Deadline</span>
+                          <span class="font-semibold">26 April 2025</span>
+                      </div>
+
+                      <button id="c2" class="item-complete btn bg-primary-color text-white">Completed</button>
+                  </div>
+              </div>
+
+              <!--task item (3)-->
+              <div id="item-3" class="bg-base-color p-6 space-y-4 rounded-xl shadow-md md:shadow-none">
+
+                  <!--upper part-->
+                  <span class="bg-white rounded-md px-3 py-2 text-sm">SwiftPay</span>
+                  <h1 class="text-xl font-semibold">Optimize Home Page </h1>
+                  <p class="task-details bg-white rounded-md p-4 text-sm text-gray-500">
+                      Due to excessive memory use, the home page is shutting down again and again.
+                  </p>
+
+                  <!--divider-->
+                  <hr class="dashed">
+
+                  <!--lower part-->
+                  <div class="w-full flex justify-between">
+                      <div class="flex flex-col">
+                          <span class="text-sm text-gray-500">Deadline</span>
+                          <span class="font-semibold">21 March 2025</span>
+                      </div>
+
+                      <button id="c3" class="item-complete btn bg-primary-color text-white">Completed</button>
+                  </div>
+              </div>
+
+              <!--task item (4)-->
+              <div id="item-4" class="bg-base-color p-6 space-y-4 rounded-xl shadow-md md:shadow-none">
+
+                  <!--upper part-->
+                  <span class="bg-white rounded-md px-3 py-2 text-sm">Meta</span>
+                  <h1 class="text-xl font-semibold">Add new emoji 🥳 </h1>
+                  <p class="task-details bg-white rounded-md p-4 text-sm text-gray-500">
+                      A newly introduced emoji needs to be added with the react button.
+                  </p>
+
+                  <!--divider-->
+                  <hr class="dashed">
+
+                  <!--lower part-->
+                  <div class="w-full flex justify-between">
+                      <div class="flex flex-col">
+                          <span class="text-sm text-gray-500">Deadline</span>
+                          <span class="font-semibold">02 May 2025</span>
+                      </div>
+
+                      <button id="c4" class="item-complete btn bg-primary-color text-white">Completed</button>
+                  </div>
+              </div>
+
+              <!--task item (5)-->
+              <div id="item-5" class="bg-base-color p-6 space-y-4 rounded-xl shadow-md md:shadow-none">
+
+                  <!--upper part-->
+                  <span class="bg-white rounded-md px-3 py-2 text-sm">Google LLC</span>
+                  <h1 class="text-xl font-semibold">Integrate OpenAI API</h1>
+                  <p class="task-details bg-white rounded-md p-4 text-sm text-gray-500">
+                      Newly invented Artificial Intelligence (OpenAI) needs to be added with Google Chrome Browser.
+                  </p>
+
+                  <!--divider-->
+                  <hr class="dashed">
+
+                  <!--lower part-->
+                  <div class="w-full flex justify-between">
+                      <div class="flex flex-col">
+                          <span class="text-sm text-gray-500">Deadline</span>
+                          <span class="font-semibold">07 March 2025</span>
+                      </div>
+
+                      <button id="c5" class="item-complete btn bg-primary-color text-white">Completed</button>
+                  </div>
+              </div>
+
+              <!--task item (6)-->
+              <div id="item-6" class="bg-base-color p-6 space-y-4 rounded-xl shadow-md md:shadow-none">
+
+                  <!--upper part-->
+                  <span class="bg-white rounded-md px-3 py-2 text-sm">GlassDoor</span>
+                  <h1 class="text-xl font-semibold">Improve Job searching </h1>
+                  <p class="task-details bg-white rounded-md p-4 text-sm text-gray-500">
+                      Needs new search algorithm to reduce the time to search and load the searched data set.
+                  </p>
+
+                  <!--divider-->
+                  <hr class="dashed">
+
+                  <!--lower part-->
+                  <div class="w-full flex justify-between">
+                      <div class="flex flex-col">
+                          <span class="text-sm text-gray-500">Deadline</span>
+                          <span class="font-semibold">17 March 2025</span>
+                      </div>
+
+                      <button id="c6" class="item-complete btn bg-primary-color text-white">Completed</button>
+                  </div>
+              </div>
+
+          </div>
+
+      </section>
+
+
+      <!-- (Activity Log) -->
+      <section class="w-full h-full shadow-md mx-auto p-4 rounded-xl bg-white flex flex-col items-center">
+
+       
+          <!--heading-->
+          <div class="flex flex-col space-y-3">
+              <div class="flex space-x-3">
+                  <img src="./assets/activity.png" alt="">
+
+                  <h1>Activity Log</h1>
+              </div>
+
+              <button id="clear-history" class="btn bg-primary-color text-white w-fit">Clear History</button>
           </div>
 
 
@@ -152,11 +321,27 @@
           <hr class="w-full dashed">
           </hr>
 
+          <!--activity content-->
+
+          <div id="activity-container" class="w-full">
+
+              <!--item (1)-->
+              <!-- <p class="bg-base-color p-3 my-3 rounded-md text-sm">
+                  You have Complete The Task Add Dark Mode at 12:48:15 PM
+              </p> -->
+
+          </div>
+
+      </section>
+
+  </main>
 
 
+  <!--footer-->
 
+  <footer></footer>
 
-           <!--scripts-->
-    <script src="./scripts/main.js"></script>
+  <!--scripts-->
+  <script src="main.js"></script>
   </body>
 </html>
