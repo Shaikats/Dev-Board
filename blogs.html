@@ -48,15 +48,13 @@
   </head>
 
   <body class="font-poppins bg-base-color">
-    <!---------->
     <!--Header-->
-    <!---------->
+
     <header
       class="navbar container shadow-md mx-auto p-4 md:rounded-xl md:relative md:top-4 mb-8 bg-white"
     >
-      <!-------->
       <!--left-->
-      <!-------->
+
       <div class="navbar-start space-x-4">
         <img class="w-[28px] md:w-[36px]" src="./assets/logo.png" alt="" />
 
@@ -66,14 +64,19 @@
         </a>
       </div>
 
-      <!--------->
       <!--right-->
-      <!--------->
+
       <div class="navbar-end">
         <button id="back" class="btn bg-primary-color text-white">
           Back to Desk
         </button>
       </div>
+
+      <script>
+        document.getElementById("back").addEventListener("click", function () {
+          window.location.href = "index.html";
+        });
+      </script>
     </header>
 
     <!-- Main -->
@@ -166,12 +169,8 @@
       </section>
     </main>
 
-    <!---------->
     <!--footer-->
-    <!---------->
-    <footer></footer>
 
-    <!--scripts-->
-    <script src="./scripts/blogs.js"></script>
+    <footer></footer>
   </body>
 </html>
