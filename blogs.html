@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Board Blog</title>
+
+    <!--Google font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--FontAwesome link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!--Daisy UI + Tailwind CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-color": "#3752FD",
+              "base-color": "#F4F7FF",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!--Raw CSS-->
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+
+  <body class="font-poppins bg-base-color">
+    <!---------->
+    <!--Header-->
+    <!---------->
+    <header
+      class="navbar container shadow-md mx-auto p-4 md:rounded-xl md:relative md:top-4 mb-8 bg-white"
+    >
+      <!-------->
+      <!--left-->
+      <!-------->
+      <div class="navbar-start space-x-4">
+        <img class="w-[28px] md:w-[36px]" src="./assets/logo.png" alt="" />
+
+        <!--site logo-->
+        <a class="text-lg md:text-2xl flex">
+          Dev <span class="font-bold">Board</span>
+        </a>
+      </div>
+
+      <!--------->
+      <!--right-->
+      <!--------->
+      <div class="navbar-end">
+        <button id="back" class="btn bg-primary-color text-white">
+          Back to Desk
+        </button>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container mx-auto p-0">
+      <!-- (title section) -->
+      <section class="md:mt-12">
+        <h1 class="text-2xl font-bold text-center">Blogs</h1>
+      </section>
+
+      <!-- (blog-container) -->
+      <section class="py-1 md:py-4">
+        <!--item (1)-->
+        <div class="card bg-white shadow-md my-6">
+          <h2 class="p-6 font-bold">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h2>
+
+          <hr class="my-0" />
+
+          <p class="p-6">
+            Elements in the DOM can be selected in different ways. Using an ID
+            selects a single element, while class names and tag names can be
+            used to select multiple elements.CSS selector is the flexible
+            options.
+          </p>
+        </div>
+
+        <!--item (2)-->
+        <div class="card bg-white shadow-md my-6">
+          <h2 class="p-6 font-bold">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </h2>
+
+          <hr class="my-0" />
+
+          <p class="p-6">
+            innerHTML, innerText, and textContent are used to get or change the
+            content inside an element. `innerHTML` includes both text and HTML
+            tags, allowing changes to the structure. `innerText` only shows the
+            visible text and ignores hidden content. `textContent` gets all
+            text, including hidden content, but consider it as plain text.
+          </p>
+        </div>
+
+        <!--item (3)-->
+        <div class="card bg-white shadow-md my-6">
+          <h2 class="p-6 font-bold">
+            Question-3: What is event delegation in the DOM?
+          </h2>
+
+          <hr class="my-0" />
+
+          <p class="p-6">
+            Event delegation uses a parent element to manage events for its
+            children. Instead of adding listeners to each child, one listener on
+            the parent detects and handles events as they bubble up.
+          </p>
+        </div>
+
+        <!--item (4)-->
+        <div class="card bg-white shadow-md my-6">
+          <h2 class="p-6 font-bold">
+            Question-4: What is event bubbling in the DOM?
+          </h2>
+
+          <hr class="my-0" />
+
+          <p class="p-6">
+            Event bubbling is when an event starts on a child element and moves
+            up through its parent elements, allowing efficient event handling.
+          </p>
+        </div>
+
+        <!--item (5)-->
+        <div class="card bg-white shadow-md my-6">
+          <h2 class="p-6 font-bold">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </h2>
+
+          <hr class="my-0" />
+
+          <p class="p-6">
+            Elements can be created using document.createElement(), added with
+            appendChild(), and removed using remove().
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!---------->
+    <!--footer-->
+    <!---------->
+    <footer></footer>
+
+    <!--scripts-->
+    <script src="./scripts/blogs.js"></script>
+  </body>
+</html>
